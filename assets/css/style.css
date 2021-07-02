@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap%27');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bangers', sans-serif;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    background-color: #040405;
+    color: #fff;
+}
+
+h1 {
+    color: #be08ad;
+    font-size: 5rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /* cursor: default; */
+}
+
+form{
+    max-width: 100%;
+    box-shadow: 0 5px 10px #dfa8c6;
+    width: 400px;
+}
+
+input{
+    border: none;
+    color: #a09f9f;
+    font-size: 2rem;
+    display: block;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.input:focus{
+    outline-color: #dddddd;
+}
+  
+.input::placeholder{
+    color: #a09f9f;
+}
+
+.list {
+    margin-top: 1rem;
+    background-color: #5b5a5a;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li {
+    border-top: 1px solid #dddddd;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+  
+.list li.completed {
+    color: #dfa8c6;
+    text-decoration: line-through;
+    background-color: #a09f9f;
+}
+
+small {
+    color: #be08ad;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+i.fa-trash {
+    color: #be08ad;
+    float: right;
+}
